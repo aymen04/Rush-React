@@ -11,8 +11,8 @@ function Header() {
 			<header className="home-header">
 				<img src={logo} className="home-logo" alt="logo" />
 				<nav className='navbar'>
-					<a href="/" className='anav'>Accueil</a>
-					<a href="/Liste" className='anav'>Liste</a>
+					<a href="/" className='anav'>Home</a>
+					<a href="/Liste" className='anav'>List</a>
 				</nav>
 			</header>
 		
