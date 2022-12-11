@@ -9,7 +9,7 @@ function AllArticles({id , image , title , description , lien , tags , datepubli
             <img src={image} />
             <h2>{title}</h2>
             <p>{description}</p>
-            <p>{tags}</p>
+            <p className='tags'>{tags}</p>
             <p className='datepublication'>{datepublication}</p>
     
         </a>

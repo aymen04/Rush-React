@@ -49,8 +49,12 @@
 	}
 }
 
-button {
-	font-size: calc(10px + 2vmin);
+button  {
+	color: white;
+    background-color: #949494;
+    border-radius: 20px;
+    font-size: inherit;
+	border: solid;
 }
 
 .ListCard {
@@ -61,9 +65,7 @@ button {
 	margin-top: 94px;
 	margin-left: 20px;
 
-	.selected {
-		background-color: red;
-	}
+	
 }
 
 .Card {
@@ -131,12 +133,18 @@ p {
 		color: rgb(254, 254, 254);
 		border-color: #fff;
 	}
+
+	button{
+		background-color: #fff;
+		color: black;
+	}
+
 }
 
 .light {
 	background-color: #fff;
 
-	p,
+	p.tags,
 	h2 {
 		color: #333;
 		border-color: #333;
@@ -158,4 +166,46 @@ p {
     border-radius: 9px;
     width: 134px;
 	text-align: center;
+}
+
+div.ListFilter{
+	margin-top: 121px;
+	.selected {
+		background-color: green;
+		border-radius: 20px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.Theme{
+		margin-left: unset;
+	}
+	
+	div .ais-SortBy-select{
+			margin-left: unset;
+			margin-top: 14px;
+			
+	}
+
+	header .home-header{
+		width: 101%;
+	}
+	
+	div.ListCard{
+		width: 100vw;
+		gap: 50px;
+	}
+
+	p {
+		font-size: 7px;
+	}
+
+	div.ListFilter{
+		margin-top: 90px;
+	}
+
+	form.SearchBar{
+		margin-left: -64px;
+	}
+
 }
